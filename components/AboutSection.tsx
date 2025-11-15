@@ -113,7 +113,7 @@ const items = [
 
 export default function AboutSection() {
   return (
-    <section className="w-full mt-20">
+    <section className="w-full mt-12">
       <div className="flex flex-col items-center">
         <h2 className="text-[clamp(14px,1.8vw,24px)] text-black text-center mb-[3vh]">
           A few words about me

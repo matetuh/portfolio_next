@@ -9,7 +9,7 @@ const Hero = () => {
       <GridBackgroundDemo />
       
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center">
+      <div className="relative z-10 flex flex-col items-center pt-32 lg:pt-0">
         {/* Profile Image */}
         <div className="mb-[1vh]">
           <Image

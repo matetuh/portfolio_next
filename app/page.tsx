@@ -19,17 +19,27 @@ export default function Home() {
       <FloatingNavDemo />
       
       {/* Hero Section */}
-      <section className="w-full max-w-[1728px] px-[clamp(5px,9.375vw,162px)]">
+      <section className="w-full max-w-[1728px] px-5 sm:px-[clamp(5px,9.375vw,162px)]">
         <Hero />
         
         {/* Image at bottom of hero section */}
-        <div className="mt-10">
+        <div className=" sm:mt-10">
+          {/* Desktop image */}
           <Image 
             src="/img-1.png" 
             alt="Portfolio showcase" 
             width={1404}
             height={800}
-            className="w-full h-auto rounded-4xl shadow-lg"
+            className="hidden sm:block w-full h-auto shadow-lg"
+            priority
+          />
+          {/* Mobile image */}
+          <Image 
+            src="/img-1-mobile.png" 
+            alt="Portfolio showcase" 
+            width={700}
+            height={800}
+            className="block sm:hidden w-full h-auto shadow-lg"
             priority
           />
         </div>
