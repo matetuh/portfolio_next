@@ -56,7 +56,7 @@ export default function PortfolioSection() {
                   {item.subtitle}
                 </p>
               </div>
-              <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden bg-gray-100">
+              <div className="relative w-full aspect-16/10 rounded-2xl overflow-hidden bg-gray-100">
                 <Image
                   src={item.image}
                   alt={`${item.title} - ${item.subtitle}`}

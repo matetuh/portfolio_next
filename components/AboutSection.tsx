@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const UIUXHeader = () => {
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] flex-col p-6 rounded-lg">
+    <div className="flex flex-1 w-full h-full min-h-24 flex-col p-6 rounded-lg">
       <div className="flex items-start gap-3 mb-4">
         <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
@@ -35,7 +35,7 @@ const UIUXHeader = () => {
 
 const MobileDevHeader = () => {
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] flex-col p-6 rounded-lg">
+    <div className="flex flex-1 w-full h-full min-h-24 flex-col p-6 rounded-lg">
       <div className="flex items-start gap-3 mb-4">
         <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
@@ -63,7 +63,7 @@ const MobileDevHeader = () => {
 
 const WebDevHeader = () => {
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] flex-col p-6 rounded-lg">
+    <div className="flex flex-1 w-full h-full min-h-24 flex-col p-6 rounded-lg">
       <div className="flex items-start gap-3 mb-4">
         <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
