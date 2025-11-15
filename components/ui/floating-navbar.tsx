@@ -7,6 +7,7 @@ import {
   useMotionValueEvent,
 } from "motion/react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 
 export const FloatingNav = ({
@@ -22,7 +23,7 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll();
 
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
@@ -30,7 +31,7 @@ export const FloatingNav = ({
       let direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
+        setVisible(true);
       } else {
         if (direction < 0) {
           setVisible(true);
@@ -46,7 +47,7 @@ export const FloatingNav = ({
       <motion.div
         initial={{
           opacity: 1,
-          y: -100,
+          y: 0,
         }}
         animate={{
           y: visible ? 0 : -100,
@@ -60,6 +61,13 @@ export const FloatingNav = ({
           className
         )}
       >
+        <Image 
+          src="/logo.svg" 
+          alt="Logo" 
+          width={53} 
+          height={24} 
+          className="mr-2 sm:hidden"
+        />
         {navItems.map((navItem: any, idx: number) => (
           <a
             key={`link=${idx}`}
