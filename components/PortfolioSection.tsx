@@ -48,7 +48,7 @@ const portfolioItems = [
 
 export default function PortfolioSection() {
   return (
-    <section className="w-full mt-20">
+    <section className="w-full mt-20 mb-20">
       <div className="flex flex-col items-center">
         <p className="text-[clamp(14px,1.8vw,24px)] text-gray-600 text-center mb-[3vh]">
           Portfolio
@@ -76,7 +76,7 @@ export default function PortfolioSection() {
                   {item.subtitle}
                 </p>
               </div>
-              <a href={`/gallery?index=${i}`} className="block">
+              <a href={`/gallery?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}`} className="block">
                 <div className="relative w-full aspect-16/10 rounded-2xl overflow-hidden bg-gray-100">
                   <Image
                     src={item.image}
