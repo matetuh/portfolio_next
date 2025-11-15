@@ -1,5 +1,7 @@
 import Hero from "@/components/Hero";
 import { FloatingNavDemo } from "@/components/FloatingNavDemo";
+import AboutSection from "@/components/AboutSection";
+import PortfolioSection from "@/components/PortfolioSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -31,6 +33,12 @@ export default function Home() {
             priority
           />
         </div>
+
+        {/* About Section */}
+        <AboutSection />
+
+        {/* Portfolio Section */}
+        <PortfolioSection />
       </section>
     </main>
   );

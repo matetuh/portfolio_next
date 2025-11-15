@@ -1,0 +1,143 @@
+"use client";
+import React from "react";
+import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
+import { motion } from "motion/react";
+import Image from "next/image";
+
+const UIUXHeader = () => {
+  return (
+    <div className="flex flex-1 w-full h-full min-h-[6rem] bg-white flex-col p-6 rounded-lg">
+      <div className="flex items-start gap-3 mb-4">
+        <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3 className="text-2xl font-bold text-black">UI/UX Design</h3>
+      </div>
+      <p className="text-xl text-gray-600 mb-6 text-left">
+        I develop innovative solutions by identifying the problem that needs addressing and
+      </p>
+      <div className="mt-auto">
+        <Image 
+          src="/ui-technologies.svg" 
+          alt="UI/UX Design Tools" 
+          width={600}
+          height={200}
+          className="w-full h-auto"
+        />
+      </div>
+    </div>
+  );
+};
+
+const MobileDevHeader = () => {
+  return (
+    <div className="flex flex-1 w-full h-full min-h-[6rem] bg-white flex-col p-6 rounded-lg">
+      <div className="flex items-start gap-3 mb-4">
+        <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+            <line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+        </div>
+        <h3 className="text-2xl font-bold text-black">Mobile Development</h3>
+      </div>
+      <p className="text-xl text-gray-600 mb-6 text-left">
+        I develop innovative solutions by identifying the problem that needs addressing and
+      </p>
+      <div className="mt-auto">
+        <Image 
+          src="/mobile-tech.svg" 
+          alt="Mobile Development Technologies" 
+          width={600}
+          height={200}
+          className="w-full h-auto"
+        />
+      </div>
+    </div>
+  );
+};
+
+const WebDevHeader = () => {
+  return (
+    <div className="flex flex-1 w-full h-full min-h-[6rem] bg-white flex-col p-6 rounded-lg">
+      <div className="flex items-start gap-3 mb-4">
+        <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
+        <h3 className="text-2xl font-bold text-black">Web Development</h3>
+      </div>
+      <p className="text-xl text-gray-600 mb-6 text-left">
+        I develop innovative solutions by identifying the problem that needs addressing and
+      </p>
+      <div className="mt-auto">
+        <Image 
+          src="/technologies.svg" 
+          alt="Web Development Technologies" 
+          width={600}
+          height={200}
+          className="w-full h-auto"
+        />
+      </div>
+    </div>
+  );
+};
+
+const items = [
+  {
+    title: "",
+    description: "",
+    header: <UIUXHeader />,
+    className: "md:col-span-1 md:row-span-2",
+  },
+  {
+    title: "",
+    description: "",
+    header: <MobileDevHeader />,
+    className: "md:col-span-1 md:row-span-2",
+  },
+  {
+    title: "",
+    description: "",
+    header: <WebDevHeader />,
+    className: "md:col-span-1 md:row-span-2",
+  },
+];
+
+export default function AboutSection() {
+  return (
+    <section className="w-full mt-20">
+      <div className="flex flex-col items-center">
+        <h2 className="text-[clamp(14px,1.8vw,24px)] text-black text-center mb-[3vh]">
+          A few words about me
+        </h2>
+        <p className="text-[clamp(40px,3.5vw,60px)] font-normal text-center leading-tight mb-12">
+          I build user-centered{" "}
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">Mobile</span> and{" "}
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">Web</span> solutions by defining the core
+          problem, designing intuitive{" "}
+          <span className="text-red-500 font-semibold">UI & UX</span>, and delivering
+          functional, scalable implementations.
+        </p>
+        <BentoGrid className="w-full max-w-full">
+          {items.map((item, i) => (
+            <BentoGridItem
+              key={i}
+              title={item.title}
+              description={item.description}
+              header={item.header}
+              className={item.className}
+            />
+          ))}
+        </BentoGrid>
+      </div>
+    </section>
+  );
+}
