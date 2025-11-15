@@ -16,13 +16,22 @@ export default function Home() {
       </div>
       <FloatingNavDemo />
       
-      {/* Container with max-width 1728px and fluid margins (5px -> 162px) */}
-      <div className="w-full max-w-[1728px] px-[clamp(5px,9.375vw,162px)]">
+      {/* Hero Section */}
+      <section className="w-full max-w-[1728px] px-[clamp(5px,9.375vw,162px)]">
         <Hero />
-      </div>
-      <div className="w-full max-w-[1728px] px-[clamp(5px,9.375vw,162px)]">
-        <Hero />
-      </div>
+        
+        {/* Image at bottom of hero section */}
+        <div className="mt-10">
+          <Image 
+            src="/img-1.png" 
+            alt="Portfolio showcase" 
+            width={1404}
+            height={800}
+            className="w-full h-auto rounded-4xl shadow-lg"
+            priority
+          />
+        </div>
+      </section>
     </main>
   );
 }
