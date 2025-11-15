@@ -4,15 +4,12 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center lg:justify-start lg:pt-[200px] pb-10 bg-white" style={{ fontFamily: 'var(--font-albert-sans)' }}>
+    <div className="relative w-full flex flex-col items-center justify-center lg:justify-start lg:pt-[200px] pb-10" style={{ fontFamily: 'var(--font-albert-sans)' }}>
       {/* Grid background */}
-      <div className="fixed inset-0 -z-10">
-        <div className="w-full h-full bg-size-[80px_80px] bg-[linear-gradient(to_right,#e5e5e5_1px,transparent_1px),linear-gradient(to_bottom,#e5e5e5_1px,transparent_1px)]" />
-        <div className="pointer-events-none fixed inset-0 bg-white mask-[radial-gradient(ellipse_at_center,transparent_0%,white_70%)]"></div>
-      </div>
+      <GridBackgroundDemo />
       
       {/* Hero Content */}
-      <div className="flex flex-col items-center">
+      <div className="relative z-10 flex flex-col items-center">
         {/* Profile Image */}
         <div className="mb-[1vh]">
           <Image
