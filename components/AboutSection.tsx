@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const UIUXHeader = () => {
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] bg-white flex-col p-6 rounded-lg">
+    <div className="flex flex-1 w-full h-full min-h-[6rem] flex-col p-6 rounded-lg">
       <div className="flex items-start gap-3 mb-4">
         <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
@@ -15,7 +15,7 @@ const UIUXHeader = () => {
             <path d="M2 12l10 5 10-5"/>
           </svg>
         </div>
-        <h3 className="text-2xl font-bold text-black">UI/UX Design</h3>
+        <h3 className="text-2xl font-medium text-black">UI/UX Design</h3>
       </div>
       <p className="text-xl text-gray-600 mb-6 text-left">
         I develop innovative solutions by identifying the problem that needs addressing and
@@ -35,7 +35,7 @@ const UIUXHeader = () => {
 
 const MobileDevHeader = () => {
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] bg-white flex-col p-6 rounded-lg">
+    <div className="flex flex-1 w-full h-full min-h-[6rem] flex-col p-6 rounded-lg">
       <div className="flex items-start gap-3 mb-4">
         <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
@@ -43,7 +43,7 @@ const MobileDevHeader = () => {
             <line x1="12" y1="18" x2="12.01" y2="18"/>
           </svg>
         </div>
-        <h3 className="text-2xl font-bold text-black">Mobile Development</h3>
+        <h3 className="text-2xl font-medium text-black">Mobile Development</h3>
       </div>
       <p className="text-xl text-gray-600 mb-6 text-left">
         I develop innovative solutions by identifying the problem that needs addressing and
@@ -63,7 +63,7 @@ const MobileDevHeader = () => {
 
 const WebDevHeader = () => {
   return (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] bg-white flex-col p-6 rounded-lg">
+    <div className="flex flex-1 w-full h-full min-h-[6rem] flex-col p-6 rounded-lg">
       <div className="flex items-start gap-3 mb-4">
         <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
@@ -72,7 +72,7 @@ const WebDevHeader = () => {
             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
           </svg>
         </div>
-        <h3 className="text-2xl font-bold text-black">Web Development</h3>
+        <h3 className="text-2xl font-medium text-black">Web Development</h3>
       </div>
       <p className="text-xl text-gray-600 mb-6 text-left">
         I develop innovative solutions by identifying the problem that needs addressing and
@@ -118,7 +118,7 @@ export default function AboutSection() {
         <h2 className="text-[clamp(14px,1.8vw,24px)] text-black text-center mb-[3vh]">
           A few words about me
         </h2>
-        <p className="text-[clamp(40px,3.5vw,60px)] font-normal text-center leading-tight mb-12">
+        <p className="text-[clamp(40px,3.5vw,60px)] font-normal text-center leading-tight mb-20">
           I build user-centered{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">Mobile</span> and{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">Web</span> solutions by defining the core

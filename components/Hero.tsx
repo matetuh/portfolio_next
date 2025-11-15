@@ -47,10 +47,10 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex gap-[2vw] flex-wrap justify-center">
-          <button className="bg-black text-white px-[4vw] py-[1vh] rounded-full font-medium hover:bg-gray-800 transition-colors text-[clamp(16px,1.8vw,18px)] min-w-[150px]">
+          <button className="bg-black text-white px-[4vw] py-[1vh] rounded-full font-regular hover:bg-gray-800 transition-colors text-[clamp(16px,1.8vw,18px)] min-w-[150px]">
             Porozmawiajmy
           </button>
-          <button className="border border-black text-black px-[2vw] py-[1vh] rounded-full font-medium hover:bg-black hover:text-white transition-colors text-[clamp(16px,1.8vw,18px)] min-w-[150px]">
+          <button className="border border-black text-black px-[2vw] py-[1vh] rounded-full font-regular hover:bg-black hover:text-white transition-colors text-[clamp(16px,1.8vw,18px)] min-w-[150px]">
             Projekty
           </button>
         </div>

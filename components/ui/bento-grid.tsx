@@ -36,11 +36,11 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "group/bento shadow-input row-span-1 flex flex-col justify-between rounded-xl border border-neutral-200 bg-white p-0 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none relative",
+        "group/bento shadow-input row-span-1 flex flex-col justify-between rounded-xl border border-neutral-200 bg-white p-0 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none relative isolate",
         className,
       )}
     >
-      <GlowingEffect disabled={false} proximity={100} borderWidth={2} spread={40} />
+      <GlowingEffect disabled={false} proximity={100} borderWidth={1} spread={40} />
       {header}
       <div className="transition duration-200 group-hover/bento:translate-x-2">
         {icon}
