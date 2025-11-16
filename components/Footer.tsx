@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import Image from 'next/image'
 
-
 export default function Footer() {
   return (
     <footer className="w-full py-8 bg-white border-t border-gray-200 mt-20" style={{ fontFamily: 'var(--font-albert-sans)' }}>
