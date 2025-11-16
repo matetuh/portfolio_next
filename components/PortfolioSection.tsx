@@ -5,14 +5,19 @@ import { motion } from "motion/react";
 
 const portfolioUiItems = [
   {
-    title: "Portfolio Website",
+    title: "Personal Portfolio",
     subtitle: "Mateusz Kuzaj Portfolio",
     image: "/portfolio-0.png",
   },
   {
-    title: "Cryptocurrency App",
+    title: "Crypto Wagering App",
     subtitle: "Mobile app idea",
     image: "/portfolio-1.png",
+  },
+  {
+    title: "Workout & Gym Tracker App",
+    subtitle: "Mobile app idea",
+    image: "/portfolio-3.png",
   },
   {
     title: "AI-Powered Chatbot App",
@@ -20,12 +25,7 @@ const portfolioUiItems = [
     image: "/portfolio-2.png",
   },
   {
-    title: "Gym Tracker App",
-    subtitle: "Mobile app idea",
-    image: "/portfolio-3.png",
-  },
-  {
-    title: "Cryptocurrency App",
+    title: "Crypto Wagering App",
     subtitle: "Mobile app idea",
     image: "/portfolio-4.png",
   },
@@ -35,7 +35,7 @@ const portfolioUiItems = [
     image: "/portfolio-5.png",
   },
   {
-    title: "Job Finder App",
+    title: "Worksy – Job Finder App",
     subtitle: "Mobile app idea",
     image: "/portfolio-6.png",
   },
@@ -49,13 +49,28 @@ const portfolioUiItems = [
     subtitle: "Web app idea",
     image: "/portfolio-8.png",
   },
+  {
+    title: "Solar Energy Web App",
+    subtitle: "Web app idea",
+    image: "/portfolio-9.png",
+  },
+  {
+    title: "Solar Energy Web Calculator",
+    subtitle: "Web app idea",
+    image: "/portfolio-10.png",
+  },
+  {
+    title: "Solar Energy Landing Page",
+    subtitle: "Web app idea",
+    image: "/portfolio-11.png",
+  },
 ];
 
 const portfolioMobileItems = [
   {
     title: "Braintease Mobile App",
     subtitle: "Dating app created with React Native",
-    image: "/portfolio-1.png",
+    image: "/portfolio-mb-0.png",
   },
 ];
 
@@ -65,16 +80,6 @@ const portfolioWebItems = [
     subtitle: "Personal portfolio website built with Next.js",
     image: "/portfolio-0.png",
   },
-  // {
-  //   title: "Nazca Health",
-  //   subtitle: "Responsible for UI & UX and front-end development",
-  //   image: "/portfolio-9.png",
-  // },
-  // {
-  //   title: "Entonal Studio",
-  //   subtitle: "Responsible for UI & UX and part of front-end development",
-  //   image: "/portfolio-9.png",
-  // },
 ];
 
 export default function PortfolioSection() {
@@ -107,7 +112,7 @@ export default function PortfolioSection() {
                   {item.subtitle}
                 </p>
               </div>
-              <a href={`/gallery?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}`} className="block">
+              <a href={`/portfolio?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}&type=${encodeURIComponent('ui')}`} className="block">
                 <div className="relative w-full aspect-16/10 rounded-2xl overflow-hidden bg-gray-100">
                   <Image
                     src={item.image}
@@ -145,7 +150,7 @@ export default function PortfolioSection() {
                   {item.subtitle}
                 </p>
               </div>
-              <a href={`/gallery?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}`} className="block">
+              <a href={`/portfolio?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}&type=${encodeURIComponent('mobile')}`} className="block">
                 <div className="relative w-full aspect-16/10 rounded-2xl overflow-hidden bg-gray-100">
                   <Image
                     src={item.image}
@@ -186,7 +191,7 @@ export default function PortfolioSection() {
                   {item.subtitle}
                 </p>
               </div>
-              <a href={`/gallery?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}`} className="block">
+              <a href={`/portfolio?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}&type=${encodeURIComponent('web')}`} className="block">
                 <div className="relative w-full aspect-16/10 rounded-2xl overflow-hidden bg-gray-100">
                   <Image
                     src={item.image}
