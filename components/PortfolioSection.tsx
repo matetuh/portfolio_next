@@ -49,13 +49,18 @@ const portfolioUiItems = [
     subtitle: "Web app idea",
     image: "/portfolio-8.png",
   },
+  {
+    title: "Solar Energy Web App",
+    subtitle: "Web app idea",
+    image: "/portfolio-10.png",
+  },
 ];
 
 const portfolioMobileItems = [
   {
     title: "Braintease Mobile App",
     subtitle: "Dating app created with React Native",
-    image: "/portfolio-1.png",
+    image: "/portfolio-9.png",
   },
 ];
 
