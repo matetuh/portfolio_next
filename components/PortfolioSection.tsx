@@ -65,6 +65,16 @@ const portfolioWebItems = [
     subtitle: "Personal portfolio website built with Next.js",
     image: "/portfolio-0.png",
   },
+  // {
+  //   title: "Nazca Health",
+  //   subtitle: "Responsible for UI & UX and front-end development",
+  //   image: "/portfolio-9.png",
+  // },
+  // {
+  //   title: "Entonal Studio",
+  //   subtitle: "Responsible for UI & UX and part of front-end development",
+  //   image: "/portfolio-9.png",
+  // },
 ];
 
 export default function PortfolioSection() {
@@ -75,7 +85,7 @@ export default function PortfolioSection() {
           Portfolio
         </p>
         <h2 className="text-[clamp(40px,3.5vw,60px)] font-normal text-center leading-tight mb-[5vh]">
-          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">UX/UI</span> cases
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">UI & UX</span> cases
         </h2>
         
         {/* Portfolio Grid */}
@@ -150,9 +160,12 @@ export default function PortfolioSection() {
         </div>
       </div>
       <div className="flex flex-col items-center mt-[5vh]">
-        <h2 className="text-[clamp(40px,3.5vw,60px)] font-normal text-center leading-tight mb-[5vh]">
+        <h2 className="text-[clamp(40px,3.5vw,60px)] font-normal text-center leading-tight mb-[1vh]">
           <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">Web</span> projects
         </h2>
+        <p className="text-[clamp(14px,1.8vw,24px)] text-gray-600 text-center mb-[3vh]">
+          In which i was involved
+        </p>
         
         {/* Portfolio Grid */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
