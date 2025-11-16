@@ -3,6 +3,7 @@ import { FloatingNavDemo } from "@/components/FloatingNavDemo";
 import AboutSection from "@/components/AboutSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
 
         {/* Portfolio Section */}
         <PortfolioSection />
+        <Footer />
       </section>
     </main>
   );
