@@ -1,7 +1,6 @@
 import React from 'react'
 import { GridBackgroundDemo } from './ui/GridBackgroundDemo'
-import Image from 'next/image'
-import { FlipWords } from './ui/flip-words.tsx'
+import { FlipWords } from './ui/flip-words'
 import Link from "next/link";
 
 const Hero = () => {
@@ -23,7 +22,7 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col items-center pt-32 lg:pt-0">
         {/* Profile Image */}
         <div className="mb-[1vh]">
-          <Image
+          <img
             src="/avatar.png"
             alt="Mateusz Kuzaj"
             width={80}

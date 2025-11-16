@@ -7,8 +7,6 @@ import {
   useMotionValueEvent,
 } from "motion/react";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
-
 
 export const FloatingNav = ({
   navItems,
@@ -61,7 +59,7 @@ export const FloatingNav = ({
           className
         )}
       >
-        <Image 
+        <img
           src="/logo.svg" 
           alt="Logo" 
           width={53} 
