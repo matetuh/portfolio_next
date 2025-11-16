@@ -8,7 +8,7 @@ const albertSans = Albert_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Mateusz Kuzaj Portfolio",
+  title: "ITUX Mateusz Kuzaj Portfolio",
   description: "Software Developer & UI/UX Portfolio of Mateusz Kuzaj",
 };
 

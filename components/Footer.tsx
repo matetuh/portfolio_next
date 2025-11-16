@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="w-full py-8 bg-white border-t border-gray-200 mt-20" style={{ fontFamily: 'var(--font-albert-sans)' }}>
+    <footer className="w-full py-8 bg-white border-t border-gray-200 mt-20" style={{ fontFamily: 'var(--font-albert-sans)'}} id="footer">
       <div className="max-w-[1728px] mx-auto px-5 flex flex-col items-center justify-center">
         <p className="text-gray-500 text-sm mb-2">© {new Date().getFullYear()} ITUX Mateusz Kuzaj. All rights reserved.</p>
         <div className="flex gap-6 mt-2">
