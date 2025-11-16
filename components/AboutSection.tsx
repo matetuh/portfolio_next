@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const UIUXHeader = () => {
   return (
-    <div className="flex flex-1 w-full h-full min-h-24 flex-col p-6 rounded-lg">
+    <div className="flex flex-1 w-full h-full min-h-24 flex-col p-6 rounded-lg" style={{ fontFamily: 'var(--font-albert-sans)' }}>
       <div className="flex items-start gap-3 mb-4">
         <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
@@ -35,7 +35,7 @@ const UIUXHeader = () => {
 
 const MobileDevHeader = () => {
   return (
-    <div className="flex flex-1 w-full h-full min-h-24 flex-col p-6 rounded-lg">
+    <div className="flex flex-1 w-full h-full min-h-24 flex-col p-6 rounded-lg" style={{ fontFamily: 'var(--font-albert-sans)' }}>
       <div className="flex items-start gap-3 mb-4">
         <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
@@ -63,7 +63,7 @@ const MobileDevHeader = () => {
 
 const WebDevHeader = () => {
   return (
-    <div className="flex flex-1 w-full h-full min-h-24 flex-col p-6 rounded-lg">
+    <div className="flex flex-1 w-full h-full min-h-24 flex-col p-6 rounded-lg" style={{ fontFamily: 'var(--font-albert-sans)' }}>
       <div className="flex items-start gap-3 mb-4">
         <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
@@ -113,19 +113,19 @@ const items = [
 
 export default function AboutSection() {
   return (
-    <section className="w-full mt-12">
+    <section className="w-full mt-12" style={{ fontFamily: 'var(--font-albert-sans)' }}>
       <div className="flex flex-col items-center">
         <h2 className="text-[clamp(14px,1.8vw,24px)] text-black text-center mb-[3vh]">
           A few words about me
         </h2>
-        <p className="text-[clamp(40px,3.5vw,60px)] font-normal text-center leading-tight mb-20">
+        <h2 className="text-[clamp(40px,3.5vw,60px)] font-normal text-center leading-tight mb-[2vh]">
           I build user-centered{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">Mobile</span> and{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">Web</span> solutions by defining the core
           problem, designing intuitive{" "}
           <span className="text-red-500 font-semibold">UI & UX</span>, and delivering
           functional, scalable implementations.
-        </p>
+        </h2>
         <BentoGrid className="w-full max-w-full">
           {items.map((item, i) => (
             <BentoGridItem
