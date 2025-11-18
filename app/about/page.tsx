@@ -156,7 +156,7 @@ export default function AboutPage() {
 
       <div className="w-full max-w-[1728px] px-5 sm:px-[clamp(5px,9.375vw,162px)] mx-auto mt-20">
         <header className="mb-8 text-center">
-          <h1 className="text-[clamp(28px,3vw,40px)] font-medium"><span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">My</span> Carrer</h1>
+          <h1 className="text-[clamp(28px,3vw,40px)] font-medium"><span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">My</span> Career</h1>
           <p className="text-gray-600 mt-2">Contact details & experience history</p>
         </header>
 
