@@ -17,7 +17,7 @@ const UIUXHeader = () => {
         <h3 className="text-2xl font-medium text-black">UI/UX Design</h3>
       </div>
       <p className="text-xl text-gray-600 mb-6 text-left">
-        I develop innovative solutions by identifying the problem that needs addressing and
+        I design intuitive digital experiences by uncovering the core user needs and translating them into thoughtful, purposeful interfaces.
       </p>
       <div className="mt-auto">
         <img
@@ -45,7 +45,7 @@ const MobileDevHeader = () => {
         <h3 className="text-2xl font-medium text-black">Mobile Development</h3>
       </div>
       <p className="text-xl text-gray-600 mb-6 text-left">
-        I develop innovative solutions by identifying the problem that needs addressing and
+        I build high-performance mobile applications by understanding user goals and delivering smooth, reliable, and scalable experiences.
       </p>
       <div className="mt-auto">
         <img
@@ -74,7 +74,7 @@ const WebDevHeader = () => {
         <h3 className="text-2xl font-medium text-black">Web Development</h3>
       </div>
       <p className="text-xl text-gray-600 mb-6 text-left">
-        I develop innovative solutions by identifying the problem that needs addressing and
+        I build dynamic web experiences by identifying business and user needs and translating them into fast, scalable solutions.
       </p>
       <div className="mt-auto">
         <img
