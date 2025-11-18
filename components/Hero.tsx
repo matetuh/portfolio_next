@@ -54,19 +54,19 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex gap-[2vw] flex-wrap justify-center">
-          <Link href="mailto:ituxmateuszkuzaj@gmail.com" className="text-gray-400 hover:text-pink-500 transition" aria-label="Dribbble">
-            <button className="relative inline-flex h-12 overflow-hidden rounded-full p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <Link href="/about" className="text-gray-400 hover:text-pink-500 transition" aria-label="Dribbble">
+            <button className="relative inline-flex h-12 overflow-hidden rounded-md p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 py-1 text-[clamp(16px,1.8vw,18px)] font-regular text-white backdrop-blur-3xl">
-                Porozmawiajmy
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-black px-10 py-2 rounded-md text-[clamp(16px,1.8vw,18px)] text-white backdrop-blur-3xl">
+                Career
               </span>
             </button>
           </Link>
           <Link href="/#portfolio" className="text-gray-400 hover:text-pink-500 transition" aria-label="Dribbble">
-            <button className="relative inline-flex h-12 overflow-hidden rounded-full p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <button className="relative inline-flex h-12 overflow-hidden rounded-md p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-white px-8 py-1 text-[clamp(16px,1.8vw,18px)] font-regular text-black backdrop-blur-3xl">
-                Projekty
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-white px-10 py-2 rounded-md text-[clamp(16px,1.8vw,18px)] text-black backdrop-blur-3xl">
+                Portfolio
               </span>
             </button>
           </Link>

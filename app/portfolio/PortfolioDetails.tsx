@@ -97,6 +97,15 @@ const images_web = [
     "/0/p-0-5.png",
     "/0/p-0-6.png",
   ],
+  [
+    "/web-2/p-web-2-0.png",
+    "/web-2/p-web-2-1.png",
+  ],
+  [
+    "/web-1/p-web-1-0.png",
+    "/web-1/p-web-1-1.png",
+    "/web-1/p-web-1-2.png",
+  ],
 ]
 
 const descriptions_ui = [
@@ -336,6 +345,41 @@ const descriptions_web = [
       "✨ Concept → 🎨 Figma Design → ⚙️ Next.js Implementation",
       "A modern, colorful, and responsive portfolio that demonstrates both UI/UX design skills and frontend development expertise."
     ]
+  ],
+  [
+    [
+      "Entonal.studio – UI/UX in Adobe XD & React Implementation",
+      "Entonal.studio is a modern web app designed for musicians and composers to explore microtonal tuning systems. The UI/UX was crafted in Adobe XD, focusing on clarity, usability, and a visually engaging experience tailored for creative professionals.",
+      "The frontend is implemented in React, translating the Adobe XD designs into a responsive, interactive application. The interface features intuitive controls, clean layouts, and vibrant accents to support both experimentation and workflow efficiency.",
+      "Tech highlights:",
+      "• React – Component-based architecture for scalable and maintainable code",
+      "• Adobe XD UI/UX Design – High-fidelity prototypes and design system",
+      "• Responsive Design – Optimized for desktop and tablet usage",
+      "• Interactive Controls – Real-time tuning adjustments and visual feedback",
+      "",
+      "This project demonstrates a full end-to-end process:",
+      "✨ Concept → 🎨 Adobe XD Design → ⚙️ React Implementation",
+      "A modern, creative, and user-focused web app for microtonal music exploration.",
+      "Website: [https://entonal.studio/](https://entonal.studio/)"
+    ]
+  ],
+  [
+    [
+      "TDCM.ai – UI/UX in Figma to Wix Studio Implementation",
+      "A modern business website for TDCM.ai, designed in Figma and implemented using Wix Studio. The project focuses on delivering a clean, professional, and responsive web presence for an AI solutions company.",
+      "The design process started in Figma, where all UI/UX elements were crafted to reflect the brand’s innovative and trustworthy identity. Layouts, color schemes, and typography were chosen for clarity and impact, ensuring the site is both visually appealing and easy to navigate.",
+      "The final implementation in Wix Studio translates the Figma designs into a fully functional website. Responsive layouts adapt seamlessly to desktop, tablet, and mobile devices, maintaining consistency and usability across platforms.",
+      "Tech highlights:",
+      "• Wix Studio - CMS site builder for production-ready web apps",
+      "• Custom Figma UI/UX Design to Wix Studio Implementation",
+      "• Responsive Design – Optimized layouts for mobile, tablet, and desktop",
+      "• Fully functional business website with contact forms and service information and serves as an informational hub for TDCM.ai's AI solutions.",
+      "",
+      "This project reflects a full end-to-end workflow:",
+      "✨ Concept → 🎨 Figma Design → ⚙️ Wix Studio Implementation",
+      "A modern, minimalistic, and responsive website which serves informations about the TDCM ai solutions.",
+      "Website: [https://www.tdcm.ai/](https://www.tdcm.ai/)"
+    ]
   ]
 ];
 
@@ -374,7 +418,7 @@ export default function PortfolioDetails() {
       <div className="fixed top-0 left-0 w-full z-50">
         <FloatingNavDemo />
       </div>
-      <div className="min-h-screen pt-[150px] pb-[150px] py-10 px-5 w-full max-w-[1728px] mx-auto">
+      <div className="min-h-screen pt-[150px] pb-[50px] py-10 px-5 w-full max-w-[1728px] mx-auto">
         <section className="w-full max-w-[1728px] px-5 sm:px-[clamp(5px,9.375vw,162px)]">
         <h2 className="text-[clamp(40px,3.5vw,60px)] font-normal text-center leading-tight mb-5">
           {title}
