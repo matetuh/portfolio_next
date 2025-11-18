@@ -405,7 +405,7 @@ export default function PortfolioDetails() {
   const localizationParam = searchParams.get("localization") ?? "web";
   const localization: Localization = localizationParam as Localization;
   return (
-    <main className="relative bg-white flex flex-col overflow-x-hidden w-full min-h-screen">
+    <main className="relative bg-white flex flex-col overflow-x-hidden w-full min-h-screen" style={{ fontFamily: 'var(--font-albert-sans)' }}>
       {/* Logo - Desktop only, top left */}
       <div className="hidden sm:flex fixed top-10 left-[calc((100vw-min(100vw,1728px))/2+162px)] z-5000 items-center h-14">
         <img 
