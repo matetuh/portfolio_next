@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FloatingNavDemo } from "@/components/FloatingNavDemo";
 import Footer from "@/components/Footer";
 import SkillBadge from "@/components/SkillBadge";
+import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 export const metadata = {
   title: "About — Mateusz Kuzaj",
@@ -153,7 +154,7 @@ export default function AboutPage() {
         <FloatingNavDemo />
       </div>
 
-      <div className="max-w-[1100px] w-full mt-20">
+      <div className="w-full max-w-[1728px] px-5 sm:px-[clamp(5px,9.375vw,162px)] mx-auto mt-20">
         <header className="mb-8 text-center">
           <h1 className="text-[clamp(28px,3vw,40px)] font-medium"><span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-orange-500 to-red-500 font-semibold">My</span> Carrer</h1>
           <p className="text-gray-600 mt-2">Contact details & experience history</p>
@@ -165,7 +166,8 @@ export default function AboutPage() {
 
         <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           <div className="lg:col-span-1">
-            <div className="p-6 rounded-2xl border border-gray-100">
+            <div className="p-6 rounded-2xl border border-gray-100 relative isolate">
+              <GlowingEffect disabled={false} proximity={100} borderWidth={1} spread={40} />
               <div className="flex items-center gap-4 mb-4">
                 <img src="/avatar.png" alt="Mateusz Kuzaj" className="w-16 h-16 rounded-full object-cover bg-linear-to-r from-blue-500 via-orange-500 to-red-500" />
                 <div>
@@ -230,7 +232,8 @@ export default function AboutPage() {
           </div>
 
           <div className="lg:col-span-2">
-            <div className="p-6 rounded-2xl border border-gray-100">
+            <div className="p-6 rounded-2xl border border-gray-100 relative isolate">
+              <GlowingEffect disabled={false} proximity={100} borderWidth={1} spread={40} />
               <h3 className="text-xl font-medium mb-4">Biography</h3>
               <p className="text-gray-700 leading-relaxed mb-6">
                 I’m a UX/UI Designer and Frontend Developer focused on building thoughtful, accessible
