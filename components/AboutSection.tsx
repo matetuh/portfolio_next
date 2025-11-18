@@ -2,7 +2,6 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { motion } from "motion/react";
-import Image from "next/image";
 
 const UIUXHeader = () => {
   return (
@@ -21,7 +20,7 @@ const UIUXHeader = () => {
         I develop innovative solutions by identifying the problem that needs addressing and
       </p>
       <div className="mt-auto">
-        <Image 
+        <img
           src="/ui-technologies.svg" 
           alt="UI/UX Design Tools" 
           width={600}
@@ -49,7 +48,7 @@ const MobileDevHeader = () => {
         I develop innovative solutions by identifying the problem that needs addressing and
       </p>
       <div className="mt-auto">
-        <Image 
+        <img
           src="/mobile-tech.svg" 
           alt="Mobile Development Technologies" 
           width={600}
@@ -78,7 +77,7 @@ const WebDevHeader = () => {
         I develop innovative solutions by identifying the problem that needs addressing and
       </p>
       <div className="mt-auto">
-        <Image 
+        <img
           src="/technologies.svg" 
           alt="Web Development Technologies" 
           width={600}

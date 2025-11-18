@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { motion } from "motion/react";
 
 const portfolioUiItems = [
@@ -8,61 +7,73 @@ const portfolioUiItems = [
     title: "Personal Portfolio",
     subtitle: "Mateusz Kuzaj Portfolio",
     image: "/portfolio-0.png",
+    typeIndex: 'ui',
   },
   {
     title: "Crypto Wagering App",
     subtitle: "Mobile app idea",
     image: "/portfolio-1.png",
+    typeIndex: 'ui',
   },
   {
     title: "Workout & Gym Tracker App",
     subtitle: "Mobile app idea",
-    image: "/portfolio-3.png",
+    image: "/2/p-2-0.png",
+    typeIndex: 'ui',
   },
   {
     title: "AI-Powered Chatbot App",
     subtitle: "Mobile app idea",
     image: "/portfolio-2.png",
+    typeIndex: 'ui',
   },
   {
     title: "Crypto Wagering App",
     subtitle: "Mobile app idea",
     image: "/portfolio-4.png",
+    typeIndex: 'ui',
   },
   {
     title: "Car Rental Service App",
     subtitle: "Mobile app idea",
     image: "/portfolio-5.png",
+    typeIndex: 'ui',
   },
   {
     title: "Worksy – Job Finder App",
     subtitle: "Mobile app idea",
     image: "/portfolio-6.png",
+    typeIndex: 'ui',
   },
   {
     title: "Webapp Dashboard App",
     subtitle: "Web app idea",
     image: "/portfolio-7.png",
+    typeIndex: 'ui',
   },
   {
     title: "AI-Powered Chat Web App",
     subtitle: "Web app idea",
     image: "/portfolio-8.png",
+    typeIndex: 'ui',
   },
   {
     title: "Solar Energy Web App",
     subtitle: "Web app idea",
     image: "/portfolio-9.png",
+    typeIndex: 'ui',
   },
   {
     title: "Solar Energy Web Calculator",
     subtitle: "Web app idea",
     image: "/portfolio-10.png",
+    typeIndex: 'ui',
   },
   {
     title: "Solar Energy Landing Page",
     subtitle: "Web app idea",
     image: "/portfolio-11.png",
+    typeIndex: 'ui',
   },
 ];
 
@@ -71,6 +82,7 @@ const portfolioMobileItems = [
     title: "Braintease Mobile App",
     subtitle: "Dating app created with React Native",
     image: "/portfolio-mb-0.png",
+    typeIndex: 'mobile',
   },
 ];
 
@@ -79,8 +91,10 @@ const portfolioWebItems = [
     title: "Portfolio Website",
     subtitle: "Personal portfolio website built with Next.js",
     image: "/portfolio-0.png",
+    typeIndex: 'web',
   },
 ];
+
 
 export default function PortfolioSection() {
   return (
@@ -112,12 +126,11 @@ export default function PortfolioSection() {
                   {item.subtitle}
                 </p>
               </div>
-              <a href={`/portfolio?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}&type=${encodeURIComponent('ui')}`} className="block">
+              <a href={`/portfolio?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}&localization=${encodeURIComponent(item.typeIndex)}`} className="block">
                 <div className="relative w-full aspect-16/10 rounded-2xl overflow-hidden bg-gray-100">
-                  <Image
+                  <img
                     src={item.image}
                     alt={`${item.title} - ${item.subtitle}`}
-                    fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
@@ -150,13 +163,12 @@ export default function PortfolioSection() {
                   {item.subtitle}
                 </p>
               </div>
-              <a href={`/portfolio?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}&type=${encodeURIComponent('mobile')}`} className="block">
+              <a href={`/portfolio?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}&localization=${encodeURIComponent(item.typeIndex)}`} className="block">
                 <div className="relative w-full aspect-16/10 rounded-2xl overflow-hidden bg-gray-100">
-                  <Image
+                  <img
                     src={item.image}
                     alt={`${item.title} - ${item.subtitle}`}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               </a>
@@ -191,13 +203,12 @@ export default function PortfolioSection() {
                   {item.subtitle}
                 </p>
               </div>
-              <a href={`/portfolio?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}&type=${encodeURIComponent('web')}`} className="block">
+              <a href={`/portfolio?index=${i}&title=${encodeURIComponent(item.title)}&subtitle=${encodeURIComponent(item.subtitle)}&localization=${encodeURIComponent(item.typeIndex)}`} className="block">
                 <div className="relative w-full aspect-16/10 rounded-2xl overflow-hidden bg-gray-100">
-                  <Image
+                  <img
                     src={item.image}
                     alt={`${item.title} - ${item.subtitle}`}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-auto object-fill transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               </a>
