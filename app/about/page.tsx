@@ -56,7 +56,7 @@ const EDUCATION = [
     years: "2020-2021",
     degree: "Master of Science in Engineering, Big Data Analytics (English-language)",
     school: "Wrocław University of Science and Technology",
-    notes: ["Foundations in typography, layout and digital illustration."],
+    notes: [],
   },
   {
     years: "2016 — 2020",
@@ -207,9 +207,9 @@ export default function AboutPage() {
                       download
                     >
                       <button className="relative inline-flex h-12 overflow-hidden rounded-md p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)]" />
-                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-black px-10 py-2 rounded-md text-sm text-white backdrop-blur-3xl">
-                          Download CV (EN)
+                        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)] rounded-md pointer-events-none" />
+                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-black px-6 sm:px-10 py-2 rounded-md text-btn text-white backdrop-blur-3xl whitespace-nowrap">
+                          CV (ENG)
                         </span>
                       </button>
                     </a>
@@ -218,13 +218,40 @@ export default function AboutPage() {
                       download
                     >
                       <button className="relative inline-flex h-12 overflow-hidden rounded-md p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)]" />
-                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-white px-10 py-2 rounded-md text-sm text-black backdrop-blur-3xl">
-                          Pobierz CV (PL)
+                        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)] rounded-md pointer-events-none" />
+                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-white px-6 sm:px-10 py-2 rounded-md text-btn text-black backdrop-blur-3xl whitespace-nowrap">
+                          CV (PL)
                         </span>
                       </button>
                     </a>
 
+                  </div>
+                </div>
+                <div className="pt-3">
+                  <strong className="block text-gray-900 mb-2">Download References</strong>
+                  <div className="flex gap-3 mb-3">
+                    <a
+                      href="/references/TDCM-ENG.pdf"
+                      download
+                    >
+                      <button className="relative inline-flex h-12 overflow-hidden rounded-md p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)] rounded-md pointer-events-none" />
+                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-black px-6 sm:px-10 py-2 rounded-md text-btn text-white backdrop-blur-3xl whitespace-nowrap">
+                          TDCM (ENG)
+                        </span>
+                      </button>
+                    </a>
+                    <a
+                      href="/references/TDCM-PL.pdf"
+                      download
+                    >
+                      <button className="relative inline-flex h-12 overflow-hidden rounded-md p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)] rounded-md pointer-events-none" />
+                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-white px-6 sm:px-10 py-2 rounded-md text-btn text-black backdrop-blur-3xl whitespace-nowrap">
+                          TDCM (PL)
+                        </span>
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -236,9 +263,12 @@ export default function AboutPage() {
               <GlowingEffect disabled={false} proximity={100} borderWidth={1} spread={40} />
               <h3 className="text-xl font-medium mb-4">Biography</h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                I’m a UX/UI Designer and Frontend Developer focused on building thoughtful, accessible
-                digital products. I design in Figma and implement using React/Next.js and Tailwind CSS.
-                I enjoy solving UX problems and shipping high-quality interfaces with performance in mind.
+                Mobile-Focused Software Developer & UI/UX Designer with
+                5 years of commercial experience across 20+ projects.
+                I specialize in mobile applications (React Native, Expo, Flutter)
+                and user interfaces design (Figma, Adobe XD, Affinity).
+                I combine technical and design expertise to deliver end-to-end
+                solutions from concept to deployment.
               </p>
 
               <h3 className="text-xl font-medium mb-4">Experience</h3>
