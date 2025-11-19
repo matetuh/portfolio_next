@@ -5,19 +5,33 @@ import { FloatingNavDemo } from "@/components/FloatingNavDemo";
 import AboutSection from "@/components/AboutSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import Footer from "@/components/Footer";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isLogoVisible, setIsLogoVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsLogoVisible(window.scrollY === 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <main className="relative bg-white flex justify-center items-center flex-col overflow-hidden w-full">
       {/* Logo - Desktop only, top left */}
-      <div className="hidden sm:flex fixed top-10 left-[calc((100vw-min(100vw,1728px))/2+162px)] z-5000 items-center h-14">
-        <img 
-          src="/logo.svg" 
-          alt="Logo" 
-          width={53} 
-          height={24}
-        />
-      </div>
+      {isLogoVisible && (
+        <div className="hidden sm:flex fixed top-10 left-[calc((100vw-min(100vw,1728px))/2+162px)] z-5000 items-center h-14">
+          <img 
+            src="/logo.svg" 
+            alt="Logo" 
+            width={53} 
+            height={24}
+          />
+        </div>
+      )}
       <FloatingNavDemo />
       
       {/* Hero Section */}
@@ -32,7 +46,7 @@ export default function Home() {
             alt="Portfolio showcase" 
             width={1404}
             height={800}
-            className="hidden sm:block w-full h-auto shadow-lg"
+            className="hidden sm:block w-full h-auto shadow-lg rounded-[20px]"
           />
           {/* Mobile image */}
           <img

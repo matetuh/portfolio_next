@@ -93,6 +93,18 @@ const portfolioWebItems = [
     image: "/portfolio-0.png",
     typeIndex: 'web',
   },
+  {
+    title: "Entonal Studio",
+    subtitle: "Entonal Studio is a plugin host",
+    image: "/web-2/p-web-2-0.png",
+    typeIndex: 'web',
+  },
+  {
+    title: "TDCM.ai",
+    subtitle: "TDCM.ai – UI/UX in Figma to Wix Studio Implementation",
+    image: "/web-1/p-web-1-0.png",
+    typeIndex: 'web',
+  },
 ];
 
 
