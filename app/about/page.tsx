@@ -201,14 +201,14 @@ export default function AboutPage() {
 
                 <div className="pt-3">
                   <strong className="block text-gray-900 mb-2">Download CV</strong>
-                  <div className="flex gap-3 mb-3">
+                  <div className="flex flex-wrap gap-4 justify-start">
                     <a
                       href="/cv/CV - Mateusz Kuzaj - ENG.pdf"
                       download
                     >
                       <button className="relative inline-flex h-12 overflow-hidden rounded-md p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)] rounded-md pointer-events-none" />
-                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-black px-6 sm:px-10 py-2 rounded-md text-btn text-white backdrop-blur-3xl whitespace-nowrap">
+                        <span className="inline-flex h-full max-w-60 w-full sm:w-auto whitespace-nowrap px-4 sm:px-4 lg:px-8 py-2 cursor-pointer items-center justify-center bg-black rounded-md text-btn text-white backdrop-blur-3xl">
                           CV (ENG)
                         </span>
                       </button>
@@ -219,7 +219,7 @@ export default function AboutPage() {
                     >
                       <button className="relative inline-flex h-12 overflow-hidden rounded-md p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)] rounded-md pointer-events-none" />
-                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-white px-6 sm:px-10 py-2 rounded-md text-btn text-black backdrop-blur-3xl whitespace-nowrap">
+                        <span className="inline-flex h-full max-w-60 w-full sm:w-auto whitespace-nowrap px-4 sm:px-4 lg:px-8 py-2 cursor-pointer items-center justify-center bg-white rounded-md text-btn text-black backdrop-blur-3xl">
                           CV (PL)
                         </span>
                       </button>
@@ -229,14 +229,14 @@ export default function AboutPage() {
                 </div>
                 <div className="pt-3">
                   <strong className="block text-gray-900 mb-2">Download References</strong>
-                  <div className="flex gap-3 mb-3">
+                  <div className="flex flex-wrap gap-4 justify-start">
                     <a
                       href="/references/TDCM-ENG.pdf"
                       download
                     >
                       <button className="relative inline-flex h-12 overflow-hidden rounded-md p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)] rounded-md pointer-events-none" />
-                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-black px-6 sm:px-10 py-2 rounded-md text-btn text-white backdrop-blur-3xl whitespace-nowrap">
+                        <span className="inline-flex h-full max-w-60 w-full sm:w-auto whitespace-nowrap px-4 sm:px-4 lg:px-8 py-2 cursor-pointer items-center justify-center bg-black rounded-md text-btn text-white backdrop-blur-3xl">
                           TDCM (ENG)
                         </span>
                       </button>
@@ -247,7 +247,7 @@ export default function AboutPage() {
                     >
                       <button className="relative inline-flex h-12 overflow-hidden rounded-md p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#f97316_50%,#ef4444_100%)] rounded-md pointer-events-none" />
-                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-white px-6 sm:px-10 py-2 rounded-md text-btn text-black backdrop-blur-3xl whitespace-nowrap">
+                        <span className="inline-flex h-full max-w-60 w-full sm:w-auto whitespace-nowrap px-4 sm:px-4 lg:px-8 py-2 cursor-pointer items-center justify-center bg-white rounded-md text-btn text-black backdrop-blur-3xl">
                           TDCM (PL)
                         </span>
                       </button>
